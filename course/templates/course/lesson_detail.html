@@ -1,0 +1,22 @@
+
+{% extends 'course/base.html' %}
+    <h1>Lesson Detail view</h1>
+   
+   {% block content %}   
+   {% if object is not None %}
+
+   {{object.title}}
+   {{object.description}}
+
+   {% else %}
+
+   <h3>Upgrade membership</h3>
+   
+
+
+
+       
+   {% endif %}
+       
+
+   {% endblock content %}
