@@ -6,7 +6,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('course.urls',namespace='courses')),
+    path('courses/',include('course.urls',namespace='courses')),
     path('membership/',include('membership.urls',namespace='memberships')),
 ]
 
